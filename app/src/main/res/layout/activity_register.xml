@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4D9D9"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="Create Account"
+                android:textSize="30dp"
+                android:textColor="#FF6D00"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_gravity="center"></TextView>
+
+            <EditText
+                android:id="@+id/register_name"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:hint="Name"></EditText>
+
+            <EditText
+                android:id="@+id/register_age"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:ems="3"
+                android:hint="Age"></EditText>
+
+            <RadioGroup
+                android:id="@+id/register_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender:"
+                    android:textColor="#000000"></TextView>
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:checked="false"
+                    android:text="Male"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:checked="false"
+                    android:text="Female"></RadioButton>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/register_phone_number"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"></EditText>
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Email"></EditText>
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Password"></EditText>
+
+            <EditText
+                android:id="@+id/register_retype_password"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Retype Password"></EditText>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:digits="1234567890"
+                android:inputType="phone"
+                android:hint="Emergency Number"
+                android:id="@+id/emergency_phone_number"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="#78E058"
+                android:text="Register"
+                android:textColor="#000000"
+                android:layout_gravity="center"></Button>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already Registered?"
+                    android:textColor="#000000"></TextView>
+
+                <TextView
+                    android:id="@+id/login_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Login"
+                    android:textColor="#0000FF"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
